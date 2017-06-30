@@ -1,0 +1,3 @@
+../pageable_node_list/{sortfield}/{sortdirection}/{number of results per page}/{page number}
+Note: page number is zero indexed, so page 0 is really the first page, etc...
+../pageable_node_list/title/ASC/5/0
