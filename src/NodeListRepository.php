@@ -15,10 +15,15 @@ class NodeListRepository implements NodeListRepositoryInterface {
                 ->sort($sortField,$sortOrder)
                 ->range($page,$pageSize);
         $nids = $query->execute();
+        $count = $query = \Drupal::entityQuery('node')
+                ->condition('type','page')
+                ->count()
+                ->execute();
         $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+        $data = ['totalRecords' => $count];
         foreach($nodes as $node){
-            $data[]['nid'] = $node->get('nid')->value;
-            $data[]['title'] = $node->get('title')->value;
+            $data['nodedata'][]['nid'] = $node->get('nid')->value;
+            $data['nodedata'][]['title'] = $node->get('title')->value;
         }
         return $data;
     }
