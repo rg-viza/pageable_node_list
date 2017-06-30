@@ -22,8 +22,7 @@ class NodeListRepository implements NodeListRepositoryInterface {
         $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
         $data = ['totalRecords' => $count];
         foreach($nodes as $node){
-            $data['nodedata'][]['nid'] = $node->get('nid')->value;
-            $data['nodedata'][]['title'] = $node->get('title')->value;
+            $data['nodedata'][]=['nid' => $node->get('nid')->value, 'title' => $node->get('title')->value];
         }
         return $data;
     }
