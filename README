@@ -1,0 +1,30 @@
+../pageable_node_list/{sortfield}/{sortdirection}/{number of results per page}/{page number}
+Note: page number is zero indexed, so page 0 is really the first page, etc...
+../pageable_node_list/title/ASC/5/0
+
+output:
+{
+  "totalRecords": "6",
+  "nodedata": [
+    {
+      "nid": "6",
+      "title": "Beginner's guide to Drupal 8"
+    },
+    {
+      "nid": "1",
+      "title": "This is a new page"
+    },
+    {
+      "nid": "2",
+      "title": "This is Page A"
+    },
+    {
+      "nid": "4",
+      "title": "This is Page B"
+    },
+    {
+      "nid": "3",
+      "title": "This is Page Z"
+    }
+  ]
+}
