@@ -1,0 +1,5 @@
+name: Pageable Node List
+description: Provides a list of nodes in Drupal, sorted by a field, 
+package: Integration
+type: module
+core: 8.x

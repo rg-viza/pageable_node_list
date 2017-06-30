@@ -1,0 +1,3 @@
+services:
+  node_list_repository:
+      class: Drupal\pageable_node_list\NodeListRepository

@@ -1,0 +1,14 @@
+where_they_are:
+  path: '/pageable_node_list'
+  defaults:
+    _controller: '\Drupal\pageable_node_list\Controller\PageableNodeListController::basic'
+    _title: 'Pageable Node List'
+  requirements:
+    _permission: 'access content'
+where_they_are_arguments:
+  path: '/pageable_node_list/{sortField}/{sortOrder}/{pageSize}/{offset}'
+  defaults:
+    _controller: '\Drupal\pageable_node_list\Controller\PageableNodeListController::showNodes'
+    _title: 'Pageable Node List'
+  requirements:
+    _permission: 'access content'
