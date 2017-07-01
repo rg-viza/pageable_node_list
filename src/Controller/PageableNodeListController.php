@@ -1,6 +1,5 @@
 <?php
 namespace Drupal\pageable_node_list\Controller;
-use Drupal\pageable_node_list\NodeListRepository;
 use Drupal\pageable_node_list\NodeListRepositoryInterface;
 use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\HttpFoundation\Response;
