@@ -15,7 +15,7 @@ class PageableNodeListController extends ControllerBase {
    * @return array
    *   A simple renderable array.
    *   uri_paths = {
-   *     "canonical" = "/pageable_node_list/{username}"
+   *     "canonical" = "/pageable_node_list/{sortField}/{sortOrder}/{recordsPerPage}/{startingRecord}"
    *   }
    */
   protected $repoUserLocation;
