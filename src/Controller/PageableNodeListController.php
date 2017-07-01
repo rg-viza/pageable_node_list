@@ -17,7 +17,7 @@ class PageableNodeListController extends ControllerBase {
    *     "canonical" = "/pageable_node_list/{sortField}/{sortOrder}/{recordsPerPage}/{startingRecord}"
    *   }
    */
-  protected $repoUserLocation;
+  protected $repoNodeList;
 
   public function __construct(NodeListRepositoryInterface $repoNodeList){
       $this->repoNodeList = $repoNodeList;
