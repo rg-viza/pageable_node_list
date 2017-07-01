@@ -20,10 +20,10 @@ class PageableNodeListController extends ControllerBase {
   protected $repoUserLocation;
 
   public function __construct(){
-      $this->setRepoUserLocation(new NodeListRepository());
+      $this->setRepoNodeList(new NodeListRepository());
   }
 
-  public function setRepoUserLocation(NodeListRepositoryInterface $repoNodeList){
+  public function setRepoNodeList(NodeListRepositoryInterface $repoNodeList){
       $this->repoNodeList = $repoNodeList;   
   }
   public function basic() {
