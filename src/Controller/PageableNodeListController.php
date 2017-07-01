@@ -41,7 +41,7 @@ class PageableNodeListController extends ControllerBase {
   }
   public function showNodes($sortField, $sortOrder, $pageSize, $offset)
   {
-    $nodes = $this->repoNodeList->getNodes($offset, $pageSize,$sortField = 'title', $sortOrder = 'ASC');
+    $nodes = $this->repoNodeList->getNodes($offset, $pageSize, $sortField, $sortOrder);
     $response = new Response();
     $response->setContent(json_encode($nodes));
     $response->headers->set('Content-Type', 'application/json');
