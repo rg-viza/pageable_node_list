@@ -34,7 +34,7 @@ class PageableNodeListController extends ControllerBase {
 
   public function basic() {
     $element = array(
-      '#markup' => 'Provide arguments to see nodes',
+      '#markup' => 'Provide arguments to see nodes. See README',
     );
     return $element;
   }
